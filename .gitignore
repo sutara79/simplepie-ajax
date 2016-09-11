@@ -1,0 +1,6 @@
+vendor/*
+php/cache/*
+*/.AppleDouble/
+*.DS_Store
+Thumbs.db
+!.gitkeep
