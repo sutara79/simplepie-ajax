@@ -1,0 +1,13 @@
+{
+    "name": "sutara79/simplepie-ajax",
+    "description": "My practice to use Simplepie with Ajax.",
+    "authors": [
+        {
+            "name": "Yuusaku Miyazaki",
+            "email": "toumin.m7@gmail.com"
+        }
+    ],
+    "require": {
+        "simplepie/simplepie": "^1.5"
+    }
+}

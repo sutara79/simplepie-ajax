@@ -1,14 +1,29 @@
 # Demo: SimplePie + Ajax
-My practice to use SimplePie in Ajax.
+My practice to use [SimplePie](https://github.com/simplepie/simplepie) 1.5 with Ajax.
+
 
 ## Demo
 http://www.usamimi.info/~sutara/sample2/simplepie-ajax/
 
+
 ## Requirements
-#### SimplePie
-Download [SimplePie](https://github.com/simplepie/simplepie) to `vendor/`.
-Or install via [Bower](https://bower.io/).
+- Web server (ex: XAMPP)
+- PHP 5.3+
+
+
+## Install
+Get Simplepie via [Composer](https://getcomposer.org/).
 
 ```
-bower install
+$ composer install
+```
+
+
+## Usage
+Load <code>autoload.php</code>, then you can use <code>Simplepie</code> class.
+
+```php
+<?php
+require_once('../vendor/autoload.php');
+$feed = new SimplePie();
 ```

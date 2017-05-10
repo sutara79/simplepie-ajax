@@ -1,10 +1,10 @@
 <?php
-require_once('../vendor/simplepie/autoloader.php');
+require_once('../vendor/autoload.php');
 $feed = new SimplePie();
 $feed->set_feed_url('http://feeds.feedburner.com/simplepie');
-$feed->set_cache_location('./cache');
+// $feed->set_cache_location('./cache'); !!! 500 error occurs in usamimi.info
+$feed->enable_cache(false);
 $feed->init();
-
 $result = '';
 foreach ($feed->get_items() as $item) {
   $result .= <<< EOF
